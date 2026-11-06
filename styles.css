@@ -1,0 +1,167 @@
+/* Variables globales para los colores del wireframe */
+:root {
+    --bg-oscuro: #16181d;
+    --naranja-wireframe: #ff6600;
+    --naranja-hover: #e65c00;
+    --amarillo-wireframe: #ffcc00;
+    --amarillo-hover: #e6b800;
+    --gris-pastilla: #222634;
+    --azul-borde: #00bfff;
+    --gris-checkbox: #2e3548;
+    --gris-texto-secundario: #9ca3af;
+}
+
+/* Fondo de la aplicación */
+body {
+    background-color: var(--bg-oscuro);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Aplicación de JetBrains Mono a títulos, subtítulos y botones */
+h1, .titulo-principal, .tarea-titulo, .total-completado-label, .btn-seccion-naranja, .btn-seccion-amarilla {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.titulo-principal {
+    color: var(--amarillo-wireframe);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Botones de sección naranjas */
+.btn-seccion-naranja {
+    background-color: var(--naranja-wireframe);
+    color: #ffffff;
+    border: none;
+    border-radius: 50rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-seccion-naranja:hover {
+    background-color: var(--naranja-hover);
+    color: #ffffff;
+}
+
+/* Botón amarillo activo */
+.btn-seccion-amarilla {
+    background-color: var(--amarillo-wireframe);
+    color: var(--bg-oscuro);
+    border: none;
+    border-radius: 50rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.btn-seccion-amarilla:hover {
+    background-color: var(--amarillo-hover);
+    color: var(--bg-oscuro);
+}
+
+/* Pastillas de tareas (Gris oscuro azulado) */
+.listaTareas {
+    background-color: var(--gris-pastilla);
+    border: 2px solid transparent;
+    border-radius: 50rem;
+}
+
+/* Borde azul brillante de la tarea seleccionada */
+.listaTareas.activa-azul {
+    border-color: var(--azul-borde);
+}
+
+/* Títulos y descripciones dentro de las tareas */
+.tarea-titulo {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.tarea-descripcion {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.78rem;
+    color: var(--gris-texto-secundario);
+}
+
+/* Checkbox personalizado */
+.checkbox-wireframe {
+    background-color: var(--gris-checkbox);
+    border: 1px solid #4b5563;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.checkbox-wireframe:checked {
+    background-color: var(--amarillo-wireframe);
+    border-color: var(--amarillo-wireframe);
+}
+
+/* Sección de Total Completado */
+.total-completado-label {
+    color: var(--amarillo-wireframe);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.circulo-progreso {
+    width: 20px;
+    height: 20px;
+    background-color: var(--amarillo-wireframe);
+    border-radius: 50%;
+}
+
+.barra-progreso {
+    height: 8px;
+    background-color: #262c3b;
+    border-radius: 4px;
+}
+
+.barra-relleno {
+    background-color: var(--amarillo-wireframe);
+}
+
+/* Botón flotante (+) */
+.btn-flotante {
+    background-color: var(--amarillo-wireframe);
+    color: var(--bg-oscuro);
+    width: 56px;
+    height: 56px;
+    border: none;
+    z-index: 1050;
+}
+
+.btn-flotante:hover {
+    background-color: var(--amarillo-hover);
+    color: var(--bg-oscuro);
+}
+
+/* Fecha de entrega */
+.tarea-fecha {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--gris-texto-secundario);
+}
+
+/* Estilos de etiquetas de estado */
+.estado-etiqueta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 50rem;
+    text-transform: uppercase;
+}
+
+.estado-completado {
+    background-color: rgba(255, 204, 0, 0.15);
+    color: var(--amarillo-wireframe);
+    border: 1px solid var(--amarillo-wireframe);
+}
+
+.estado-pendiente {
+    background-color: rgba(156, 163, 175, 0.15);
+    color: var(--gris-texto-secundario);
+    border: 1px solid var(--gris-texto-secundario);
+}
