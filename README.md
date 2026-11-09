@@ -1,6 +1,3 @@
-Trello: 
-figma: https://www.figma.com/design/KwHHglM47gYLWX7VBVCrLZ/Sin-t%C3%ADtulo?node-id=0-1&p=f&t=0cxHcLaueoLOD21i-0
-
 # 📋 Planificador de Tareas 
 
 > Aplicación web desarrollada para la gestión eficiente de tareas y control de tiempos.
